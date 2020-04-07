@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Starke Verben</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="germanVerbs.css">
+</head>
+<body>
+	<div id="pane">
+		<div class='choosingPanel'>
+			<h2>Выберите группу</h2>
+			<table>
+				<tbody>
+					<tr>
+						<td><button  id='1'>Группа: 1</button></td>
+						<td><button  id='2'>Группа: 2</button></td>
+						<td><button  id='3'>Группа: 3</button></td>
+						<td><button  id='4'>Группа: 4</button></td>
+						<td><button  id='5'>Группа: 5</button></td>
+					</tr>
+					<tr>
+						<td><button  id='6'>Группа: 6</button></td>
+						<td><button  id='7'>Группа: 7</button></td>
+						<td><button  id='8'>Группа: 8</button></td>
+						<td><button  id='9'>Группа: 9</button></td>
+						<td><button  id='10'>Группа: 10</button></td>
+					</tr>
+					<tr>
+						<td><button  id='11'>Группа: 10</button></td>
+						<td><button  id='12'>Группа: 12</button></td>
+						<td><button  id='13'>Группа: 13</button></td>
+						<td><button  id='14'>Группа: 14</button></td>
+						<td><button  id='0'>Все глаголы</button></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div class='verbsTable invisible'>
+			<table>
+				<thead><h2><span id="verbName">Глагол </span>  <img id='hintHover' src='3.jpg'><div class='popUp' id='hint'>Подсказочка</div>  <input type="text" name="translation"></h2></thead>
+				<tbody>
+					<tr>
+						<td>ich</td>
+						<td><input type="text" name="ich"></td>
+						<td>wir </td>
+						<td><input type="text" name="wir"></td>
+					</tr>
+					<tr>
+						<td>du</td>					
+						<td><input type="text" name="du"></td>
+						<td>ihr </td>
+						<td><input type="text" name="ihr"></td>
+					</tr>
+					<tr>
+						<td>er/sie/es </td>
+						<td><input type="text" name="er"></td>
+						<td>sie/Sie </td>
+						<td><input type="text" name="Sie"></td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div id="letters">
+				<button>ä</button>
+				<button>ö</button>
+				<button>ü</button>
+				<button>ß</button>
+				
+			</div>
+
+			<span id="bottomButtons">
+				<button id="check">Проверить</button>
+				<button id="nextVerb">Дальше</button>
+				<button id="startButton">Заново</button>
+			</span>
+				
+		</div>
+		<div class='popUp' id='wrongAnswer'>Если не знаете, как правильно, воспользуйтесь подсказкой или гуглом</div>
+		<div class='popUp' id='allDone'>Молодец! Глаголы в этой группе закончились!</div>
+	</div>
+	<script type="text/javascript" src="germanVerbs.js"></script>
+	<script type="text/javascript" src="exerc.js"></script>
+</body>
+</html>
